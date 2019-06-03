@@ -11,4 +11,12 @@ package Q_01e02;
  */
 public class Arara extends Ave{
     
+    public Arara(String n, boolean v){
+        super(n);
+        voa(v);        
+    }
+    
+    public void talk(){
+       System.out.println("arara, arara");         
+    }
 }
