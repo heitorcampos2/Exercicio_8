@@ -20,11 +20,15 @@ public class Ave extends Animal{
         this.voa = v;
     }
    //////////////////////////////
-   public boolean voa(){
-       
+   public boolean voa(boolean v){
+       return true;
    }
    
    public void talk(String t){
        System.out.println("piu-piu");
+   }
+   //////////////////////////////////
+   public Ave(String n){
+       super (n);
    }
 }
