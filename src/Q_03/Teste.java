@@ -22,14 +22,17 @@ public class Teste {
         Administrador a = new Administrador("Izabela","Rua quatro", "220","(38) 0000-0000",3000,0.75,0.8);
         Operario o = new Operario("Julesca","Rua P2", "69","(38) 0000-0000",2200,0.50,1000,0.5);
         
+        System.out.println("Fornecedor:");
+        System.out.println("Saldo = R$"+f.obterSaldo());
         
-        System.out.println(f.obterSaldo());
-        
-        System.out.println(e.calcularSalario());
+        System.out.println("Empregado:");
+        System.out.println("Salário = R$"+e.calcularSalario());
 
-        System.out.println(a.calcularSalario());
+        System.out.println("Administrador:");
+        System.out.println("Salário = R$"+a.calcularSalario());
         
-        System.out.println(o.calcularSalario());
+        System.out.println("Operário:");
+        System.out.println("Salário = R$"+o.calcularSalario());
         
     }
 }
