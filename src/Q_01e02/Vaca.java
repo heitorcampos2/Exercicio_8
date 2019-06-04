@@ -14,14 +14,14 @@ public class Vaca extends Mamifero {
     
     public Vaca(String n, int p, boolean t){
        super(n,p); 
-       isTemLeite(t);
+       setTemLeite(t);
     }
     ////////////////////////////////
     public boolean getTemLeite(){
         return this.temLeite;
     }
     
-    public void isTemLeite(boolean t){
+    public void setTemLeite(boolean t){
         this.temLeite = t;
     }
     ///////////////////////////////

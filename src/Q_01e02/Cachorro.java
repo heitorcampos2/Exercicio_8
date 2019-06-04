@@ -14,7 +14,7 @@ public class Cachorro extends Mamifero {
     //////////////////////////////////////////////
     public Cachorro(String n, int p, boolean l){
         super(n,p);
-         isLatealto(l);       
+        setLatealto(l);       
     }
     ///////////////////////////////////
     public void talk(){
@@ -25,7 +25,7 @@ public class Cachorro extends Mamifero {
         return this.lateAlto;
     }
     
-    public void isLatealto(boolean l){
+    public void setLatealto(boolean l){
         this.lateAlto = l;        
     }
     ///////////////////////////

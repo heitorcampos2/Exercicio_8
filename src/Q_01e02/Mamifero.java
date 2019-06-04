@@ -21,7 +21,7 @@ public class Mamifero extends Animal {
     }
    //////////////////////////////
     
-    public Mamifero(int p, String n){
+    public Mamifero(String n, int p){
         super(n);
         setPatas(p);
     }
