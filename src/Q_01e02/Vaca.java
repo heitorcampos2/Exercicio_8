@@ -13,9 +13,8 @@ public class Vaca extends Mamifero {
     private boolean temLeite;
     
     public Vaca(String n, int p, boolean t){
-       super(n); 
-       setPatas(p);
-       isTemLeite(l);
+       super(n,p); 
+       isTemLeite(t);
     }
     ////////////////////////////////
     public boolean getTemLeite(){

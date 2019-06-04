@@ -13,9 +13,8 @@ public class Cachorro extends Mamifero {
     private boolean lateAlto;
     //////////////////////////////////////////////
     public Cachorro(String n, int p, boolean l){
-        super(n);
-        setPatas(p);
-        isLatealto(l);       
+        super(n,p);
+         isLatealto(l);       
     }
     ///////////////////////////////////
     public void talk(){

@@ -12,8 +12,8 @@ package Q_01e02;
 public class Arara extends Ave{
     
     public Arara(String n, boolean v){
-        super(n);
-        voa(v);        
+        super(n,v);
+    
     }
     
     public void talk(){

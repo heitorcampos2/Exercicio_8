@@ -28,7 +28,8 @@ public class Ave extends Animal{
        System.out.println("piu-piu");
    }
    //////////////////////////////////
-   public Ave(String n){
+   public Ave(String n, boolean v){
        super (n);
+       setVoa(v);
    }
 }

@@ -20,9 +20,9 @@ public class Papagaio extends Ave {
         this.frase = f;
     }
     //////////////////////////////////////
-    public Papagaio(String n, boolean v){
-        super(n);
-        voa(v);
+    public Papagaio(String n, boolean v, String f){
+        super(n,v);
+        setFrase(f);
     }
     ////////////////////////////////////////
     public void talk(){

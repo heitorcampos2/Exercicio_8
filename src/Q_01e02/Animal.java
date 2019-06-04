@@ -33,4 +33,8 @@ public class Animal {
        setNome(n);
     }
     
+    public void mostra(){
+        System.out.println(this.getNome());
+    }
+    
 }
