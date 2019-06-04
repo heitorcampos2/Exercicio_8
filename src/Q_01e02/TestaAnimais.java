@@ -14,18 +14,18 @@ public class TestaAnimais {
         
         Papagaio p = new Papagaio("Ranger",true,"Quero cafééeee!");
         p.talk();
-        p.mostra();
+        p.imprime();
         
         Arara a = new Arara("Malevola",true);
         a.talk();
-        a.mostra();
+        a.imprime();
         
         Cachorro c = new Cachorro("Bardock",4,true);
         c.talk();
-        c.mostra();
+        c.imprime();
         
         Vaca v = new Vaca("Mimosa",4,true);
         v.talk();
-        v.mostra();
+        v.imprime();
     }      
 }
