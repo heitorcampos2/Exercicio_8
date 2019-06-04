@@ -58,4 +58,9 @@ public class Empregado extends Pessoa {
         this.imposto = i;
     }
     
+    public void calcularSalario(){
+        double s;
+        s = getSalarioBase() - ( getImposto() * getSalarioBase() );
+    }
+    
 }
