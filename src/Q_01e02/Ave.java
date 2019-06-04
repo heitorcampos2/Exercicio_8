@@ -10,13 +10,13 @@ package Q_01e02;
  * @author HeiThor
  */
 public class Ave extends Animal{
-    private String voa;
+    private boolean voa;
     /////////////////////////
-    public String getVoa(){
+    public boolean getVoa(){
         return this.voa;
     }
     
-    public void setVoa(String v){
+    public void setVoa(boolean v){
         this.voa = v;
     }
    //////////////////////////////
