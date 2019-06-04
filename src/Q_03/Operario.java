@@ -37,8 +37,8 @@ public class Operario extends Empregado{
         this.comissao = c;
     }
     
-    public Operario(String c,double s,double i, double vp, double c){
-        super(c,s,i);
+    public Operario(String n, String e, String t, String c,double s,double i, double vp, double c){
+        super(n,e,t,c,s,i);
         setValorProducao(vp);
         setComissao(c);
     }

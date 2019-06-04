@@ -30,15 +30,13 @@ public class Administrador extends Empregado{
         this.ajudaDeCusto = a;
     }
     
-    public Adiministrador(String c,double s,double i, double a){
-        super(c,s,i);
+    public Adiministrador(SString n, String e, String t, String c,double s,double i, double a){
+        super(n,e,t,c,s,i);
         setAjudaDeCusto(a);
     }
     
-    public void calcularSalario(){
-        double s;
-        s = getSalarioBase() - ( getImposto() * getSalarioBase() ) + getAjudaDeCusto();
-        super.calcularSalario();
+    public double calcularSalario(){
+        return this.getAjudaCusto()+super.calcularSalario();
     }
     
     
