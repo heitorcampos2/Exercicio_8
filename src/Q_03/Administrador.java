@@ -22,7 +22,7 @@ todos os atributos da classe Administrador. Crie os gets e sets.
 public class Administrador extends Empregado{
     private double ajudaDeCusto;
     
-    public void getAdministrdor(){
+    public double getAjudaDeCusto(){
         return this.ajudaDeCusto;
     }
     
@@ -30,13 +30,15 @@ public class Administrador extends Empregado{
         this.ajudaDeCusto = a;
     }
     
-    public Adiministrador(SString n, String e, String t, String c,double s,double i, double a){
+    public Administrador(String n, String e, String t, String c,double s,double i, double a){
         super(n,e,t,c,s,i);
         setAjudaDeCusto(a);
     }
     
+    @Override
     public double calcularSalario(){
-        return this.getAjudaCusto()+super.calcularSalario();
+        double s = this.getSalarioBase() - ( this.getImposto() * this.getSalarioBase() )+ this.getAjudaDeCusto();
+        return s;
     }
     
     

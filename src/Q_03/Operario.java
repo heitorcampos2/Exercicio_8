@@ -37,15 +37,15 @@ public class Operario extends Empregado{
         this.comissao = c;
     }
     
-    public Operario(String n, String e, String t, String c,double s,double i, double vp, double c){
+    public Operario(String n, String e, String t, String c,double s,double i, double vp, double co){
         super(n,e,t,c,s,i);
         setValorProducao(vp);
-        setComissao(c);
+        setComissao(co);
+       
     }
 
-    public void calcularSalario(){
-        double s;
-        s = getSalarioBase() - ( getImposto() * getSalarioBase() ) + getComissao();
-        super.calcularSalario();
+    public double calcularSalario(){
+        double s = getSalarioBase() - ( getImposto() * getSalarioBase() ) + (this.getValorProducao() * (this.getComissao()/100));
+        return s;
     }
 }
