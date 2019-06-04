@@ -38,6 +38,7 @@ public class Administrador extends Empregado{
     public void calcularSalario(){
         double s;
         s = getSalarioBase() - ( getImposto() * getSalarioBase() ) + getAjudaDeCusto();
+        super.calcularSalario();
     }
     
     
