@@ -11,6 +11,7 @@ package Q_01e02;
  */
 public class Ave extends Animal{
     private boolean voa;
+    
     /////////////////////////
     public boolean getVoa(){
         return this.voa;

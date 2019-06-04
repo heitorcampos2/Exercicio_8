@@ -27,5 +27,6 @@ public class TestaAnimais {
         Vaca v = new Vaca("Mimosa",4,true);
         v.imprime();
         v.talk();
+        
     }      
 }

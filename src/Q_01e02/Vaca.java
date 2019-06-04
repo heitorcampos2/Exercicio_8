@@ -25,6 +25,7 @@ public class Vaca extends Mamifero {
         this.temLeite = t;
     }
     ///////////////////////////////
+    
     public void talk(){
         System.out.println("Muuu");
     }

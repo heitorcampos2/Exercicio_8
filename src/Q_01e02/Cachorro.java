@@ -28,6 +28,7 @@ public class Cachorro extends Mamifero {
     public void setLatealto(boolean l){
         this.lateAlto = l;        
     }
+    
     ///////////////////////////
     
 }

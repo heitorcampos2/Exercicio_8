@@ -11,6 +11,7 @@ package Q_01e02;
  */
 public class Mamifero extends Animal {
     private int patas;
+    
     ///////////////////////////
     public int getPatas(){
         return this.patas;
