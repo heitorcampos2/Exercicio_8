@@ -12,11 +12,33 @@ Cria uma classe Administrador que herde da classe Empregado.
 * Atributos: ajudaDeCusto (ajudas referentes a estadia, viagens, etc). 
 * 
 * Na classe Administrador o método calcularSalario deve ser redefinido de tal forma que o
-cálculo leve em consideração a ajudaDeCusto. Crie um construtor para setar
+cálculo leve em consideração a ajudaDeCusto. 
+* 
+* Crie um construtor para setar
 todos os atributos da classe Administrador. Crie os gets e sets.
  * 
  * @author ifnmg
  */
-public class Administrador {
+public class Administrador extends Empregado{
+    private double ajudaDeCusto;
+    
+    public void getAdministrdor(){
+        return this.ajudaDeCusto;
+    }
+    
+    public void setAjudaDeCusto(double a){
+        this.ajudaDeCusto = a;
+    }
+    
+    public Adiministrador(String c,double s,double i, double a){
+        super(c,s,i);
+        setAjudaDeCusto(a);
+    }
+    
+    public void calcularSalario(){
+        double s;
+        s = getSalarioBase() - ( getImposto() * getSalarioBase() ) + getAjudaDeCusto();
+    }
+    
     
 }
